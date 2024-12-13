@@ -119,6 +119,7 @@ section{
 .header .flex .logo{
     font-size: 2.5rem;
     color: var(--darkOliver);
+    
 }
 .header .flex .logo span{
     color: var(--orange);
@@ -226,11 +227,228 @@ section{
  .footer .credit span{
     color:var(--orange);
  }
- 
 
 
+.videoHome{
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+.videoHome .content{
+    text-align: center;
+}
+.videoHome .content h3{
+   color: var(--white);
+   font-size: 4.5rem;
+   text-transform: uppercase;
+   text-shadow: 0 0.3rem .5rem rgba(0,0,0,.1);
+}
+.videoHome .content p{
+    color: var(--white);
+    font-size: 2.5rem;
+    padding: .5rem 0;
+ }
+ .videoHome .video-container video{
+    position:absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+ }
+ .videoHome .controls{
+    padding: 1rem;
+    border-radius: 5rem;
+    background: var(--darkOliver);
+    position: relative;
+    top: 10rem;
+ }
+ .videoHome .controls .vid-btn{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: var(--orange);
+    cursor: pointer;
+    margin: 0 .5rem;
+ }
+ .videoHome .controls .vid-btn.active{
+    background: var(--yellowish);
+ }
+/*Home End*/
+.intro{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 
+}
+.introbox{
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+#introp{
+    font-size: 2.3rem;
+    text-align: center;
+    color: var(--darkOliver)
+}
+#intrologo{
+    width: 300px;
+    height: 250px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: centers;
+    display: block;
+     margin-left: auto;
+     margin-right: auto;
+}
+/*packages start*/
+.heading{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+.heading span{
+    font-size: 3.5rem;
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+    text-align: center;
+}
+.packages .box-container .box .content .p{
+    font-size: 1.3rem;
+}
+.packages .box-container .box .content a{
+    padding: 1.5rem;
+    border: .1rem solid var(--border);
+    font-size: 1.7rem;
+    color: var(--white);
+    text-transform: none;
+    text-decoration: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.packages .box-container .box .content .btn:hover{
+    background-color: var(--darkOliver);
+    color: var(--orange);
+    border-color: var(--yellowish);
+}
+.packages .box-container .box .content .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--orange);
+    color: var(--white);
+    padding: .8rem 3rem;
+    border: .2rem solid var(--box-shadow);
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.packages .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin:0 auto;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+   
+}
+.packages .box-container .box{
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem var(--box-shadow);
+    width: 350px;
+    height: 80vh;
+    border: 1px solid var(--darkOliver);
+}
+.packages .box-container .box img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+.box {
+    text-align: center;
+}
+.packages .box-container .box .content{
+    padding: 2rem;
+}
+.packages .box-container .box .content h3{
+    font-size: 2rem;
+    color: var(--darkOliver);
+}
+.packages .box-container .box .content h3 i{
+    color: var(--orange);
+}
+.packages .box-container .box .content .stars i{
+    font-size: 1.7rem;
+    color: var(--orange);
+}
+.packages .box-container .box .content .price{
+    font-size: 1.5rem;
+    color: var(--darkOliver);
+    padding-top: 1rem;
+}
+.packages .box-container .box .content .price span{
+    color: var(--darkOliver);
+    font-size: 1.5rem;
+} /*packages*/
 
+/*Course*/
+.courses .course-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin:0 auto;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+.courses .course-container .course-box{
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem var(--box-shadow);
+    width: 450px;
+    height: 40vh;
+    border: 1px solid var(--darkOliver);
+}
+.services .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 20px;
+}
+.services .box-container .box{
+    flex: 40 40 40rem;
+    border-radius: .5rem;
+    padding: 1rem;
+    text-align: center;
+}
+.services .box-container .box i{
+    padding: 1rem;
+    font-size: 5rem;
+    color: var(--orange);
+}
+.services .box-container .box h3{
+    font-size: 2.5rem;
+    color: var(--darkOliver);
+}
+.services .box-container .box p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.services .box-container .box:hover{
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 1);
+}
 
 
 

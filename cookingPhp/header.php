@@ -7,7 +7,7 @@
             <a href="explore.php">Explore</a>
             <a href="course.php">Course</a>
             <a href="about.php">About</a>
-            <a href="contact.php">contact</a>
+            <a href="contact.php">Contact</a>
         </nav>
         <div class="icons">
             <div id="menu-btn" class="fas fa-bars"></div>

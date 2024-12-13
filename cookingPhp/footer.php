@@ -35,6 +35,6 @@
 
    </div>
 
-   <p class="credit"> &copy; copyright  @ <?php echo date('Y'); ?> by <span>Group - I forgot :)</span> </p>
+   <p class="credit"> &copy; copyright  @ <?php echo date('Y'); ?> by <span>Group - 3 (Section - A)</span> </p>
 
 </section>
